@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">実況写真合成器</string>
+    <string name="start_muxing">合成を開始</string>
+    <string name="btn_muxing">合成中...</string>
+    <string name="step_one">ステップ 1: パスの選択</string>
+    <string name="select_input">入力ファイルを選択</string>
+    <string name="select_output">出力フォルダを選択</string>
+    <string name="config_options">高度な合成設定</string>
+    <string name="error_select_path">エラー：まず入力ファイルと出力フォルダを選択してください！</string>
+    <string name="selected_files_count">%d 個のファイルを選択済み</string>
+    <string name="btn_add_files">ファイルを追加</string>
+    <string name="btn_add_folder">フォルダを追加</string>
+    <string name="btn_clear_list">すべてクリア</string>
+    <string name="btn_remove">削除</string>
+    <string name="step_two">ステップ 2: 出力パス</string>
+    <string name="empty_file_list">ファイルが選択されていません</string>
+    <string name="setting_move_unmatched">一致しないファイルを移動</string>
+    <string name="setting_force_convert">動画のみを Live Photos に変換</string>
+    <string name="setting_delete_temp">合成後に変換された HEIC を削除</string>
+    <string name="setting_delete_original">合成成功後に元のファイルを削除</string>
+    <string name="title_process_progress">処理状況</string>
+    <string name="status_success">成功: %d</string>
+    <string name="status_fail">失敗: %d</string>
+    <string name="log_ready">> ターミナル準備完了...\n</string>
+    <string name="dialog_about_title">アプリについて</string>
+    <string name="dialog_privacy_title">プライバシーポリシー</string>
+    <string name="dialog_permissions_title">権限の説明</string>
+    <string name="developer_info">開発者: 沓水 雫 (Kutsumi Shizuku)</string>
+    <string name="project_usage">用途: 写真と動画を合成し、アルバムで再生可能な Motion Photo を生成します。</string>
+    <string name="app_version">バージョン: v1.1.0 (折りたたみスマホ対応版)</string>
+    <string name="privacy_content">当アプリは完全にオフラインで動作します。全ての処理は端末内で行われ、個人データを収集またはアップロードすることはありません。</string>
+    <string name="perm_folder_access">● フォルダアクセス: 選択されたディレクトリのみを処理します。</string>
+    <string name="perm_bg_service">● バックグラウンドサービス: 進捗表示と処理の中断を防止します。</string>
+    <string name="perm_vibrate">● 振動: タスク完了時にハプティクスフィードバックを行います。</string>
+    <string name="btn_confirm">確定</string>
+    <string name="dialog_orphan_title">孤立した動画が見つかりました (%d個)</string>
+    <string name="dialog_orphan_text">画像が一致しない動画ファイルが検出されました。これらの動画を直接 Live Photos に変換しますか？（最初の1秒をカバーとして使用します）</string>
+    <string name="dialog_remember_choice">次回から表示せず、この選択をデフォルトにする</string>
+    <string name="btn_convert_all">すべて変換</string>
+    <string name="btn_only_pairs">ペアのみ処理</string>
+    <string name="about_app">詳細</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">%d 個の潜在的なグループをスキャンしました...</string>
+    <string name="log_match_success">🔗 マッチング成功: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ 合成成功: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ 元のファイルを削除しました: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 動画からカバーを抽出中: %s</string>
+    <string name="log_single_video_success">✅ 動画の直接変換成功: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ 元のファイルを削除しました: %s</string>
+    <string name="log_no_match_video">⚠️ 一致する動画が見つかりません: %s</string>
+    <string name="log_no_match_image">⚠️ 一致する画像が見つからないため、動画変換をスキップしました: %s</string>
+    <string name="log_process_failed">❌ 処理失敗 %1$s: %2$s</string>
+    <string name="log_all_done">🎉 すべてのタスクが完了しました！</string>
+    <string name="log_hw_decode">⏱️ [HW加速] デコード中 %s...</string>
+    <string name="log_video_frame_extract">⏱️ [フレーム抽出] MediaMetadataRetriever を使用してカバーを抽出中...</string>
+    <string name="log_nio_merging">⏱️ [NIO ゼロコピー] ファイルを合成中...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 バックグラウンド合成ジョブを開始します...\n</string>
+    <string name="notification_channel_name">合成サービス</string>
+    <string name="notification_channel_desc">バックグラウンドで Motion Photo を合成しています...</string>
+    <string name="notification_title_processing">Live Photo を合成中... (%d%%)</string>
+    <string name="notification_text_progress">成功: %1$d | 失敗: %2$d | 残り: 約 %3$s</string>
+    <string name="unit_seconds">%d秒</string>
+    <string name="calculating">計算中...</string>
+    <string name="notification_title_complete">合成タスクが完了しました！</string>
+    <string name="notification_text_complete">成功: %1$d 組 | 失敗: %2$d 組</string>
+</resources>

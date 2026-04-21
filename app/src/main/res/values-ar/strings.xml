@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">مدمج الصور الحية</string>
+    <string name="start_muxing">بدء الدمج</string>
+    <string name="btn_muxing">جاري الدمج...</string>
+    <string name="step_one">الخطوة 1: اختيار المسارات</string>
+    <string name="select_input">اختر ملفات الإدخال</string>
+    <string name="select_output">اختر مجلد الإخراج</string>
+    <string name="config_options">خيارات الدمج المتقدمة</string>
+    <string name="error_select_path">خطأ: يرجى اختيار ملفات الإدخال ومجلد الإخراج أولاً!</string>
+    <string name="selected_files_count">%d ملفات مختارة</string>
+    <string name="btn_add_files">إضافة ملفات</string>
+    <string name="btn_add_folder">إضافة مجلد</string>
+    <string name="btn_clear_list">مسح الكل</string>
+    <string name="setting_move_unmatched">نقل الملفات غير المتطابقة</string>
+    <string name="setting_force_convert">تحويل الفيديو الفردي مباشرة إلى Live Photo</string>
+    <string name="setting_delete_temp">حذف ملفات HEIC المحولة بعد الدمج</string>
+    <string name="setting_delete_original">حذف الملفات الأصلية بعد النجاح</string>
+    <string name="title_process_progress">تقدم المعالجة</string>
+    <string name="status_success">ناجح: %d</string>
+    <string name="status_fail">فاشل: %d</string>
+    <string name="log_ready">> الواجهة جاهزة...\n</string>
+    <string name="dialog_about_title">عن التطبيق</string>
+    <string name="dialog_privacy_title">سياسة الخصوصية</string>
+    <string name="dialog_permissions_title">الأذونات</string>
+    <string name="developer_info">المطور: Kutsumi Shizuku</string>
+    <string name="project_usage">الاستخدام: دمج الصور والفيديوهات في Motion Photos قابلة للتشغيل في المعرض.</string>
+    <string name="app_version">الإصدار: v1.1.0 (محسن للأجهزة القابلة للطي)</string>
+    <string name="privacy_content">يعمل هذا التطبيق بالكامل دون اتصال بالإنترنت. تتم جميع المعالجات محلياً على جهازك. لا يتم جمع أو رفع أي بيانات.</string>
+    <string name="perm_folder_access">● الوصول للمجلدات: يعالج فقط المجلدات التي تختارها يدوياً.</string>
+    <string name="perm_bg_service">● خدمة الخلفية: تعرض التقدم وتمنع النظام من إغلاق التطبيق.</string>
+    <string name="perm_vibrate">● الاهتزاز: تنبيه لمسي عند اكتمال المهمة.</string>
+    <string name="btn_confirm">تم</string>
+    <string name="dialog_orphan_title">تم العثور على فيديوهات يتيمة (%d)</string>
+    <string name="dialog_orphan_text">تم اكتشاف ملفات فيديو بدون صور مطابقة. هل تريد تحويلها مباشرة إلى Live Photos (استخراج الثانية الأولى كغلاف)؟</string>
+    <string name="dialog_remember_choice">عدم الإظهار مجدداً، استخدم هذا الخيار كافتراضي</string>
+    <string name="btn_convert_all">تحويل الكل</string>
+    <string name="btn_only_pairs">معالجة الأزواج فقط</string>
+    <string name="about_app">عن</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">تم فحص %d مجموعة محتملة...</string>
+    <string name="log_match_success">🔗 تطابق ناجح: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ تم الدمج بنجاح: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ تم حذف الملفات الأصلية: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 جاري استخراج الغلاف من الفيديو: %s</string>
+    <string name="log_single_video_success">✅ نجح تحويل الفيديو الفردي: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ تم حذف الملف الأصلي: %s</string>
+    <string name="log_no_match_video">⚠️ لم يتم العثور على فيديو مطابق: %s</string>
+    <string name="log_no_match_image">⚠️ لم يتم العور على صورة مطابقة وتعطيل تحويل الفيديو الفردي: %s</string>
+    <string name="log_process_failed">❌ فشلت المعالجة %1$s: %2$s</string>
+    <string name="log_all_done">🎉 اكتملت جميع المهام!</string>
+    <string name="log_hw_decode">⏱️ [تسريع HW] جاري فك تشفير %s...</string>
+    <string name="log_video_frame_extract">⏱️ [استخراج الإطارات] جاري استخراج الغلاف باستخدام MediaMetadataRetriever...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] جاري دمج الملفات...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 بدء مهمة الدمج في الخلفية...\n</string>
+    <string name="notification_channel_name">خدمة المدمج</string>
+    <string name="notification_channel_desc">جاري دمج Motion Photos في الخلفية...</string>
+    <string name="notification_title_processing">جاري دمج Live Photos... (%d%%)</string>
+    <string name="notification_text_progress">ناجح: %1$d | فاشل: %2$d | المتبقي: ~%3$s</string>
+    <string name="unit_seconds">%d ثانية</string>
+    <string name="calculating">جاري الحساب...</string>
+    <string name="notification_title_complete">اكتملت مهمة الدمج بنجاح!</string>
+    <string name="notification_text_complete">الناجح: %1$d مجموعات | الفاشل: %2$d مجموعات</string>
+</resources>

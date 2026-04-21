@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Combinador Live Photo</string>
+    <string name="start_muxing">Iniciar combinación</string>
+    <string name="btn_muxing">Combinando...</string>
+    <string name="step_one">Paso 1: Seleccionar rutas</string>
+    <string name="select_input">Seleccionar archivos de entrada</string>
+    <string name="select_output">Seleccionar carpeta de salida</string>
+    <string name="config_options">Opciones de combinación avanzadas</string>
+    <string name="error_select_path">Error: ¡Por favor, seleccione primero los archivos de entrada y la carpeta de salida!</string>
+    <string name="selected_files_count">%d archivos seleccionados</string>
+    <string name="btn_add_files">Añadir archivos</string>
+    <string name="btn_add_folder">Añadir carpeta</string>
+    <string name="btn_clear_list">Borrar todo</string>
+    <string name="setting_move_unmatched">Mover archivos no coincidentes</string>
+    <string name="setting_force_convert">Convertir video individual a Live Photo</string>
+    <string name="setting_delete_temp">Eliminar HEIC convertido tras combinar</string>
+    <string name="setting_delete_original">Eliminar archivos originales tras éxito</string>
+    <string name="title_process_progress">Progreso del proceso</string>
+    <string name="status_success">Éxito: %d</string>
+    <string name="status_fail">Fallo: %d</string>
+    <string name="log_ready">> Terminal lista...\n</string>
+    <string name="dialog_about_title">Acerca de la aplicación</string>
+    <string name="dialog_privacy_title">Política de privacidad</string>
+    <string name="dialog_permissions_title">Permisos</string>
+    <string name="developer_info">Desarrollador: Kutsumi Shizuku</string>
+    <string name="project_usage">Uso: Combina fotos y videos en Motion Photos reproducibles en la galería.</string>
+    <string name="app_version">Versión: v1.1.0 (Optimizado para plegables)</string>
+    <string name="privacy_content">Esta aplicación funciona totalmente offline. Todo el procesamiento se realiza localmente. No se recogen ni suben datos.</string>
+    <string name="perm_folder_access">● Acceso a carpetas: Solo procesa directorios seleccionados manualmente.</string>
+    <string name="perm_bg_service">● Servicio en segundo plano: Muestra el progreso y evita el cierre por el sistema.</string>
+    <string name="perm_vibrate">● Vibración: Respuesta háptica al completar la tarea.</string>
+    <string name="btn_confirm">Aceptar</string>
+    <string name="dialog_orphan_title">Videos huérfanos encontrados (%d)</string>
+    <string name="dialog_orphan_text">Se detectaron videos sin imágenes correspondientes. ¿Desea convertirlos directamente a Live Photos (usando el primer segundo como portada)?</string>
+    <string name="dialog_remember_choice">No volver a mostrar, usar esta opción por defecto</string>
+    <string name="btn_convert_all">Convertir todo</string>
+    <string name="btn_only_pairs">Solo procesar parejas</string>
+    <string name="about_app">Acerca de</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">Escaneados %d grupos potenciales...</string>
+    <string name="log_match_success">🔗 Coincidencia exitosa: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ Combinación exitosa: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ Archivos originales eliminados: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 Extrayendo portada del video: %s</string>
+    <string name="log_single_video_success">✅ Conversión de video individual exitosa: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ Archivo original eliminado: %s</string>
+    <string name="log_no_match_video">⚠️ No se encontró video coincidente: %s</string>
+    <string name="log_no_match_image">⚠️ No se encontró imagen coincidente y conversión individual desactivada: %s</string>
+    <string name="log_process_failed">❌ Fallo en el proceso %1$s: %2$s</string>
+    <string name="log_all_done">🎉 ¡Todas las tareas completadas!</string>
+    <string name="log_hw_decode">⏱️ [Acel. HW] Decodificando %s...</string>
+    <string name="log_video_frame_extract">⏱️ [Extracción] Extrayendo portada usando MediaMetadataRetriever...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] Combinando archivos...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 Iniciando tarea de combinación en segundo plano...\n</string>
+    <string name="notification_channel_name">Servicio de combinación</string>
+    <string name="notification_channel_desc">Combinando Motion Photos en segundo plano...</string>
+    <string name="notification_title_processing">Combinando Live Photos... (%d%%)</string>
+    <string name="notification_text_progress">Éxito: %1$d | Fallo: %2$d | Restante: ~%3$s</string>
+    <string name="unit_seconds">%d seg</string>
+    <string name="calculating">Calculando...</string>
+    <string name="notification_title_complete">¡Combinación finalizada con éxito!</string>
+    <string name="notification_text_complete">Éxito: %1$d grupos | Fallo: %2$d grupos</string>
+</resources>

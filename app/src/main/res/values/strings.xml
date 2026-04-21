@@ -1,3 +1,69 @@
 <resources>
-    <string name="app_name">LiveXMP</string>
+    <string name="app_name">实况照片合成器</string>
+    <string name="start_muxing">开始合并</string>
+    <string name="btn_muxing">正在合并...</string>
+    <string name="step_one">第一步：选择路径</string>
+    <string name="select_input">选择输入文件</string>
+    <string name="select_output">选择输出文件夹</string>
+    <string name="config_options">高级合成选项</string>
+    <string name="error_select_path">错误：请先选择输入文件和输出文件夹！</string>
+    <string name="selected_files_count">已选择 %d 个文件</string>
+    <string name="btn_add_files">添加文件</string>
+    <string name="btn_add_folder">添加文件夹</string>
+    <string name="btn_clear_list">清空全部</string>
+    <string name="btn_remove">移除</string>
+    <string name="step_two">第二步：输出路径</string>
+    <string name="empty_file_list">未选择任何文件</string>
+    <string name="setting_move_unmatched">移动不匹配的文件</string>
+    <string name="setting_force_convert">单视频直接转实况照片</string>
+    <string name="setting_delete_temp">合并后删除转换 HEIC</string>
+    <string name="setting_delete_original">合并成功后删除原始文件</string>
+    <string name="title_process_progress">处理进度</string>
+    <string name="status_success">成功: %d</string>
+    <string name="status_fail">失败: %d</string>
+    <string name="log_ready">> 终端准备就绪...\n</string>
+    <string name="dialog_about_title">关于应用</string>
+    <string name="dialog_privacy_title">隐私政策</string>
+    <string name="dialog_permissions_title">权限说明</string>
+    <string name="developer_info">开发者: 沓水雫 (Kutsumi Shizuku)</string>
+    <string name="project_usage">项目用途: 将照片和视频合并为在相册中可以播放效果的实况照片 (Motion Photo)。</string>
+    <string name="app_version">版本: v1.1.0 (Foldable Optimized)</string>
+    <string name="privacy_content">本应用完全离线运行，所有照片处理都在手机本地完成。应用根本没有加入任何网络功能，绝不收集或上传您的私人数据。</string>
+    <string name="perm_folder_access">● 文件夹访问权限: 仅处理您手动选中的目录。</string>
+    <string name="perm_bg_service">● 后台服务与通知: 提示进度并防止被系统清理。</string>
+    <string name="perm_vibrate">● 手机震动: 任务完工后的贴心反馈。</string>
+    <string name="btn_confirm">确定</string>
+    <string name="dialog_orphan_title">发现孤立视频 (共 %d 个)</string>
+    <string name="dialog_orphan_text">检测到有视频文件没有匹配的图片。是否要将这些视频直接转换为实况照片（提取第一秒作为封面）？</string>
+    <string name="dialog_remember_choice">以后不再提示，默认执行此选择</string>
+    <string name="btn_convert_all">全部转换</string>
+    <string name="btn_only_pairs">仅处理配对项</string>
+    <string name="about_app">关于</string>
+
+    <!-- Logs from MotionPhotoMuxer -->
+    <string name="log_scanned_groups">扫描到 %d 组潜在文件...</string>
+    <string name="log_match_success">🔗 匹配成功: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ 合并成功: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ 已删除原始文件: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 正在从视频提取封面: %s</string>
+    <string name="log_single_video_success">✅ 单视频直转成功: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ 已删除原始文件: %s</string>
+    <string name="log_no_match_video">⚠️ 未发现匹配视频: %s</string>
+    <string name="log_no_match_image">⚠️ 未发现匹配图片且未开启单视频转换: %s</string>
+    <string name="log_process_failed">❌ 处理失败 %1$s: %2$s</string>
+    <string name="log_all_done">🎉 所有任务处理完毕！</string>
+    <string name="log_hw_decode">⏱️ [硬件加速] 解码 %s...</string>
+    <string name="log_video_frame_extract">⏱️ [视频抽帧] 使用 MediaMetadataRetriever 提取封面...</string>
+    <string name="log_nio_merging">⏱️ [NIO 零拷贝] 合并文件中...</string>
+
+    <!-- Service and Notifications -->
+    <string name="log_service_start">🚀 开始服务级后台合成作业...\n</string>
+    <string name="notification_channel_name">照片合成服务</string>
+    <string name="notification_channel_desc">正在后台合并动态照片...</string>
+    <string name="notification_title_processing">正在合成实况照片... (%d%%)</string>
+    <string name="notification_text_progress">成功机位: %1$d | 失败: %2$d | 剩余: 约 %3$s</string>
+    <string name="unit_seconds">%d秒</string>
+    <string name="calculating">计算中...</string>
+    <string name="notification_title_complete">合成任务顺利完成！</string>
+    <string name="notification_text_complete">本次共成功融合: %1$d 组 | 抛弃失败: %2$d 组</string>
 </resources>

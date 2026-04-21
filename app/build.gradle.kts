@@ -9,17 +9,17 @@ plugins {
 
 android {
     // 应用程序的项目命名空间
-    namespace = "com.LiveXMP.APP"
+    namespace = "com.livexmp.app"
     // 编译时使用的 Android SDK 版本
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         // 应用程序的唯一标识符
-        applicationId = "com.LiveXMP.APP"
+        applicationId = "com.livexmp.app"
         // 运行程序所需的最低 Android 版本 (Android 10+)
         minSdk = 29
         // 程序针对优化的 Android 版本
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -31,8 +31,18 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("release.jks")
+            storePassword = "password"
+            keyAlias = "releaseKey"
+            keyPassword = "password"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("release")
             // 是否启用代码混淆
             isMinifyEnabled = false
             // 默认的混淆规则文件
@@ -65,7 +75,7 @@ android {
 
 dependencies {
     // AndroidX 核心库，用于 Kotlin 扩展
-    implementation(libs.androidx.core-ktx)
+    implementation(libs.androidx.core.ktx)
     // 兼容层库，确保旧版本系统 UI 表现一致
     implementation(libs.androidx.appcompat)
     // Material Components 库
@@ -78,6 +88,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3) // Material Design 3 库
+    implementation(libs.androidx.material.icons.extended) // 扩展图标库 (Security, Key 等)
     implementation(libs.androidx.activity.compose) // 让 Activity 支持 Compose 的核心库
     
     // [核心业务逻辑依赖]

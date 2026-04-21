@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Live Photo Нэгтгэгч</string>
+    <string name="start_muxing">Нэгтгэж эхлэх</string>
+    <string name="btn_muxing">Нэгтгэж байна...</string>
+    <string name="step_one">1-р алхам: Замаа сонгоно уу</string>
+    <string name="select_input">Оролтын файлуудыг сонгох</string>
+    <string name="select_output">Гаралтын хавтас сонгох</string>
+    <string name="config_options">Нэгтгэх нэмэл特 тохиргоо</string>
+    <string name="error_select_path">Алдаа: Эхлээд оролтын файлууд болон гаралтын хавтсаа сонгоно уу!</string>
+    <string name="selected_files_count">%d файл сонгогдсон</string>
+    <string name="btn_add_files">Файл нэмэх</string>
+    <string name="btn_add_folder">Хавтас нэмэх</string>
+    <string name="btn_clear_list">Бүгдийг цэвэрлэх</string>
+    <string name="setting_move_unmatched">Тохирохгүй файлуудыг зөөх</string>
+    <string name="setting_force_convert">Дан видеог шууд Live Photo болгох</string>
+    <string name="setting_delete_temp">Нэгтгэсний дараа хөрвүүлсэн HEIC-ийг устгах</string>
+    <string name="setting_delete_original">Амжилттай болсны дараа эх файлыг устгах</string>
+    <string name="title_process_progress">Явц</string>
+    <string name="status_success">Амжилттай: %d</string>
+    <string name="status_fail">Амжилтгүй: %d</string>
+    <string name="log_ready">> Терминал бэлэн...\n</string>
+    <string name="dialog_about_title">Аппын тухай</string>
+    <string name="dialog_privacy_title">Нууцлалын бодлого</string>
+    <string name="dialog_permissions_title">Зөвшөөрөл</string>
+    <string name="developer_info">Хөгжүүлэгч: Kutsumi Shizuku</string>
+    <string name="project_usage">Хэрэглээ: Зураг болон видеог нэгтгэн цомогт тоглуулах боломжтой Motion Photo болгоно.</string>
+    <string name="app_version">Хувилбар: v1.1.0 (Foldable-д тохируулсан)</string>
+    <string name="privacy_content">Энэ апп бүрэн офлайн ажиллана. Бүх боловсруулалт таны утсан дээр хийгдэнэ. Мэдээлэл цуглуулах эсвэл дамжуулахгүй.</string>
+    <string name="perm_folder_access">● Хавтас хандах: Зөвхөн таны сонгосон санг боловсруулна.</string>
+    <string name="perm_bg_service">● Ар талын үйлчилгээ: Явцыг харуулж, систем хаахаас сэргийлнэ.</string>
+    <string name="perm_vibrate">● Чичиргээ: Даалгавар дуусахад дохио өгнө.</string>
+    <string name="btn_confirm">OK</string>
+    <string name="dialog_orphan_title">Ганцаардсан видеонууд олдлоо (%d)</string>
+    <string name="dialog_orphan_text">Зураггүй видео файлууд олдлоо. Тэднийг шууд Live Photos болгох уу (Эхний 1 сек-ийг ковер болгоно)?</string>
+    <string name="dialog_remember_choice">Дахин бүү асуу, энэ сонголтыг ашигла</string>
+    <string name="btn_convert_all">Бүгдийг хөрвүүлэх</string>
+    <string name="btn_only_pairs">Зөвхөн хосуудыг боловсруулах</string>
+    <string name="about_app">Тухай</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">%d файл илрүүллээ...</string>
+    <string name="log_match_success">🔗 Тохирол амжилттай: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ Нэгтгэлт амжилттай: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ Эх файлыг устгалаа: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 Видеоноос ковер гаргаж байна: %s</string>
+    <string name="log_single_video_success">✅ Дан видео хөрвүүлэлт амжилттай: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ Эх файлыг устгалаа: %s</string>
+    <string name="log_no_match_video">⚠️ Видео олдоогүй: %s</string>
+    <string name="log_no_match_image">⚠️ Зураг олдоогүй бөгөөд дан видео хөрвүүлэлт хаагдсан: %s</string>
+    <string name="log_process_failed">❌ Алдаа гарлаа %1$s: %2$s</string>
+    <string name="log_all_done">🎉 Бүх ажил дууслаа!</string>
+    <string name="log_hw_decode">⏱️ [HW Accel] %s-ийг уншиж байна...</string>
+    <string name="log_video_frame_extract">⏱️ [Frame Extraction] Ковер гаргаж байна...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] Файлуудыг нэгтгэж байна...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 Background нэгтгэх ажил эхэллээ...\n</string>
+    <string name="notification_channel_name">Muxer үйлчилгээ</string>
+    <string name="notification_channel_desc">Motion Photo-г ар талд нэгтгэж байна...</string>
+    <string name="notification_title_processing">Live Photo нэгтгэж байна... (%d%%)</string>
+    <string name="notification_text_progress">Амжилттай: %1$d | Алдаа: %2$d | Үлдсэн хугацаа: ~%3$s</string>
+    <string name="unit_seconds">%d сек</string>
+    <string name="calculating">Тооцоолж байна...</string>
+    <string name="notification_title_complete">Нэгтгэх ажил амжилттай дууслаа!</string>
+    <string name="notification_text_complete">Амжилттай: %1$d | Алдаа: %2$d</string>
+</resources>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Combinateur Live Photo</string>
+    <string name="start_muxing">Démarrer la fusion</string>
+    <string name="btn_muxing">Fusion en cours...</string>
+    <string name="step_one">Étape 1 : Choisir les chemins</string>
+    <string name="select_input">Choisir les fichiers d\'entrée</string>
+    <string name="select_output">Choisir le dossier de sortie</string>
+    <string name="config_options">Options de fusion avancées</string>
+    <string name="error_select_path">Erreur : Veuillez d\'abord sélectionner les fichiers d\'entrée et le dossier de sortie !</string>
+    <string name="selected_files_count">%d fichiers sélectionnés</string>
+    <string name="btn_add_files">Ajouter des fichiers</string>
+    <string name="btn_add_folder">Ajouter un dossier</string>
+    <string name="btn_clear_list">Tout effacer</string>
+    <string name="btn_remove">Supprimer</string>
+    <string name="step_two">Étape 2 : Chemin de sortie</string>
+    <string name="empty_file_list">Aucun fichier sélectionné</string>
+    <string name="setting_move_unmatched">Déplacer les fichiers non correspondants</string>
+    <string name="setting_force_convert">Convertir directement la vidéo seule en Live Photo</string>
+    <string name="setting_delete_temp">Supprimer le HEIC converti après la fusion</string>
+    <string name="setting_delete_original">Supprimer les fichiers originaux après réussite</string>
+    <string name="title_process_progress">Progression du traitement</string>
+    <string name="status_success">Succès : %d</string>
+    <string name="status_fail">Échec : %d</string>
+    <string name="log_ready">> Terminal prêt...\n</string>
+    <string name="dialog_about_title">À propos</string>
+    <string name="dialog_privacy_title">Politique de confidentialité</string>
+    <string name="dialog_permissions_title">Permissions</string>
+    <string name="developer_info">Développeur : Kutsumi Shizuku</string>
+    <string name="project_usage">Usage : Fusionne photos et vidéos en Motion Photos lisibles dans la galerie.</string>
+    <string name="app_version">Version : v1.1.0 (Optimisé pour pliables)</string>
+    <string name="privacy_content">Cette application fonctionne entièrement hors ligne. Tout le traitement est effectué localement. Aucune donnée n\'est collectée ou téléchargée.</string>
+    <string name="perm_folder_access">● Accès aux dossiers : Traite uniquement les répertoires sélectionnés manuellement.</string>
+    <string name="perm_bg_service">● Service d\'arrière-plan : Affiche la progression et empêche l\'arrêt par le système.</string>
+    <string name="perm_vibrate">● Vibration : Retour haptique à la fin de la tâche.</string>
+    <string name="btn_confirm">OK</string>
+    <string name="dialog_orphan_title">Vidéos orphelines trouvées (%d)</string>
+    <string name="dialog_orphan_text">Fichiers vidéo détectés sans images correspondantes. Voulez-vous les convertir directement en Live Photos (extraction de la 1ère seconde comme couverture) ?</string>
+    <string name="dialog_remember_choice">Ne plus afficher, utiliser ce choix par défaut</string>
+    <string name="btn_convert_all">Tout convertir</string>
+    <string name="btn_only_pairs">Traiter uniquement les paires</string>
+    <string name="about_app">À propos</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">%d groupes potentiels scannés...</string>
+    <string name="log_match_success">🔗 Correspondance réussie : %1$s + %2$s</string>
+    <string name="log_mux_success">✅ Fusion réussie : %s.jpg</string>
+    <string name="log_deleted_original">🗑️ Fichiers originaux supprimés : %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 Extraction de la couverture de la vidéo : %s</string>
+    <string name="log_single_video_success">✅ Conversion vidéo seule réussie : %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ Fichier original supprimé : %s</string>
+    <string name="log_no_match_video">⚠️ Aucune vidéo correspondante : %s</string>
+    <string name="log_no_match_image">⚠️ Aucune image correspondante et conversion vidéo seule désactivée : %s</string>
+    <string name="log_process_failed">❌ Échec du traitement %1$s : %2$s</string>
+    <string name="log_all_done">🎉 Toutes les tâches sont terminées !</string>
+    <string name="log_hw_decode">⏱️ [Accél. Matérielle] Décodage de %s...</string>
+    <string name="log_video_frame_extract">⏱️ [Extraction] Extraction de la couverture via MediaMetadataRetriever...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] Fusion des fichiers...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 Démarrage de la fusion en arrière-plan...\n</string>
+    <string name="notification_channel_name">Service de fusion</string>
+    <string name="notification_channel_desc">Fusion des Motion Photos en arrière-plan...</string>
+    <string name="notification_title_processing">Fusion des Live Photos... (%d%%)</string>
+    <string name="notification_text_progress">Succès : %1$d | Échec : %2$d | Temps restant : env. %3$s</string>
+    <string name="unit_seconds">%d sec</string>
+    <string name="calculating">Calcul...</string>
+    <string name="notification_title_complete">Fusion terminée avec succès !</string>
+    <string name="notification_text_complete">Succès : %1$d | Échec : %2$d</string>
+</resources>

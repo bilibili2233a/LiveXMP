@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Live Photo Kombinierer</string>
+    <string name="start_muxing">Zusammenführung starten</string>
+    <string name="btn_muxing">Zusammenführen...</string>
+    <string name="step_one">Schritt 1: Pfade auswählen</string>
+    <string name="select_input">Eingabedateien wählen</string>
+    <string name="select_output">Zielordner wählen</string>
+    <string name="config_options">Erweiterte Einstellungen</string>
+    <string name="error_select_path">Fehler: Bitte wählen Sie zuerst Eingabedateien und Zielordner aus!</string>
+    <string name="selected_files_count">%d Dateien ausgewählt</string>
+    <string name="btn_add_files">Dateien hinzufügen</string>
+    <string name="btn_add_folder">Ordner hinzufügen</string>
+    <string name="btn_clear_list">Alles leeren</string>
+    <string name="btn_remove">Entfernen</string>
+    <string name="step_two">Schritt 2: Zielordner</string>
+    <string name="empty_file_list">Keine Dateien ausgewählt</string>
+    <string name="setting_move_unmatched">Nicht zugeordnete Dateien verschieben</string>
+    <string name="setting_force_convert">Einzelne Videos direkt in Live Photo umwandeln</string>
+    <string name="setting_delete_temp">Konvertierte HEIC nach Zusammenführung löschen</string>
+    <string name="setting_delete_original">Originaldateien nach Erfolg löschen</string>
+    <string name="title_process_progress">Fortschritt</string>
+    <string name="status_success">Erfolgreich: %d</string>
+    <string name="status_fail">Fehlgeschlagen: %d</string>
+    <string name="log_ready">> Terminal bereit...\n</string>
+    <string name="dialog_about_title">Über die App</string>
+    <string name="dialog_privacy_title">Datenschutz</string>
+    <string name="dialog_permissions_title">Berechtigungen</string>
+    <string name="developer_info">Entwickler: Kutsumi Shizuku</string>
+    <string name="project_usage">Nutzung: Kombiniert Fotos und Videos zu Motion Photos für die Galerie.</string>
+    <string name="app_version">Version: v1.1.0 (Foldable-optimiert)</string>
+    <string name="privacy_content">Diese App arbeitet vollständig offline. Alle Verarbeitungen erfolgen lokal auf Ihrem Gerät. Es werden keine Daten gesammelt oder hochgeladen.</string>
+    <string name="perm_folder_access">● Ordnerzugriff: Verarbeitet nur manuell ausgewählte Verzeichnisse.</string>
+    <string name="perm_bg_service">● Hintergrunddienst: Zeigt den Fortschritt an und verhindert Beenden durch das System.</string>
+    <string name="perm_vibrate">● Vibration: Haptisches Feedback nach Abschluss.</string>
+    <string name="btn_confirm">OK</string>
+    <string name="dialog_orphan_title">Einzelne Videos gefunden (%d)</string>
+    <string name="dialog_orphan_text">Videos ohne passende Fotos gefunden. Direkt in Live Photos umwandeln (ersten Frame als Cover)?</string>
+    <string name="dialog_remember_choice">Nicht mehr fragen, diese Wahl als Standard verwenden</string>
+    <string name="btn_convert_all">Alle konvertieren</string>
+    <string name="btn_only_pairs">Nur Paare verarbeiten</string>
+    <string name="about_app">Über</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">%d potenzielle Gruppen gescannt...</string>
+    <string name="log_match_success">🔗 Zuordnung erfolgreich: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ Zusammenführung erfolgreich: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ Originaldateien gelöscht: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 Cover aus Video extrahieren: %s</string>
+    <string name="log_single_video_success">✅ Videokonvertierung erfolgreich: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ Originaldatei gelöscht: %s</string>
+    <string name="log_no_match_video">⚠️ Kein passendes Video gefunden: %s</string>
+    <string name="log_no_match_image">⚠️ Kein passendes Foto gefunden und Videokonvertierung deaktiviert: %s</string>
+    <string name="log_process_failed">❌ Verarbeitung fehlgeschlagen %1$s: %2$s</string>
+    <string name="log_all_done">🎉 Alle Aufgaben abgeschlossen!</string>
+    <string name="log_hw_decode">⏱️ [HW-Beschl.] Dekodiere %s...</string>
+    <string name="log_video_frame_extract">⏱️ [Frame-Extraktion] Extrahiere Cover via MediaMetadataRetriever...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] Führe Dateien zusammen...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 Starte Hintergrunddienst zur Zusammenführung...\n</string>
+    <string name="notification_channel_name">Muxer-Dienst</string>
+    <string name="notification_channel_desc">Motion Photos werden im Hintergrund zusammengeführt...</string>
+    <string name="notification_title_processing">Live Photos werden zusammengeführt... (%d%%)</string>
+    <string name="notification_text_progress">Erfolgreich: %1$d | Fehlgeschlagen: %2$d | Restzeit: ca. %3$s</string>
+    <string name="unit_seconds">%d Sek</string>
+    <string name="calculating">Berechne...</string>
+    <string name="notification_title_complete">Zusammenführung erfolgreich abgeschlossen!</string>
+    <string name="notification_text_complete">Erfolgreich: %1$d Sätze | Fehlgeschlagen: %2$d Sätze</string>
+</resources>

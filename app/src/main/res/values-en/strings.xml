@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Live Photo Muxer</string>
+    <string name="start_muxing">Start Merge</string>
+    <string name="btn_muxing">Merging...</string>
+    <string name="step_one">Step 1: Select Paths</string>
+    <string name="select_input">Select Input Files</string>
+    <string name="select_output">Select Output Folder</string>
+    <string name="config_options">Advanced Muxing Options</string>
+    <string name="error_select_path">Error: Please select input files and output folder first!</string>
+    <string name="selected_files_count">%d files selected</string>
+    <string name="btn_add_files">Add Files</string>
+    <string name="btn_add_folder">Add Folder</string>
+    <string name="btn_clear_list">Clear All</string>
+    <string name="btn_remove">Remove</string>
+    <string name="step_two">Step 2: Output Path</string>
+    <string name="empty_file_list">No files selected</string>
+    <string name="setting_move_unmatched">Move unmatched files</string>
+    <string name="setting_force_convert">Direct convert single video to Live Photo</string>
+    <string name="setting_delete_temp">Delete converted HEIC after merging</string>
+    <string name="setting_delete_original">Delete original files after success</string>
+    <string name="title_process_progress">Processing Progress</string>
+    <string name="status_success">Success: %d</string>
+    <string name="status_fail">Fail: %d</string>
+    <string name="log_ready">> Terminal is ready...\n</string>
+    <string name="dialog_about_title">About App</string>
+    <string name="dialog_privacy_title">Privacy Policy</string>
+    <string name="dialog_permissions_title">Permissions</string>
+    <string name="developer_info">Developer: Kutsumi Shizuku</string>
+    <string name="project_usage">Usage: Merge photos and videos into Motion Photos that can be played in gallery.</string>
+    <string name="app_version">Version: v1.1.0 (Foldable Optimized)</string>
+    <string name="privacy_content">This app runs entirely offline. All processing is done locally on your device. No data is collected or uploaded.</string>
+    <string name="perm_folder_access">● Folder Access: Only processes directories you manually select.</string>
+    <string name="perm_bg_service">● BG Service &amp; Notification: Shows progress and prevents system termination.</string>
+    <string name="perm_vibrate">● Vibration: Haptic feedback upon task completion.</string>
+    <string name="btn_confirm">OK</string>
+    <string name="dialog_orphan_title">Orphan Videos Found (%d)</string>
+    <string name="dialog_orphan_text">Detected video files without matching images. Do you want to convert them directly to Live Photos (extracting first second as cover)?</string>
+    <string name="dialog_remember_choice">Don\'t show again, use this choice by default</string>
+    <string name="btn_convert_all">Convert All</string>
+    <string name="btn_only_pairs">Only Process Pairs</string>
+    <string name="about_app">About</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">Scanned %d potential groups...</string>
+    <string name="log_match_success">🔗 Match success: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ Mux success: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ Deleted original files: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 Extracting cover from video: %s</string>
+    <string name="log_single_video_success">✅ Single video convert success: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ Deleted original file: %s</string>
+    <string name="log_no_match_video">⚠️ No matching video found: %s</string>
+    <string name="log_no_match_image">⚠️ No matching image found and single video conversion disabled: %s</string>
+    <string name="log_process_failed">❌ Process failed %1$s: %2$s</string>
+    <string name="log_all_done">🎉 All tasks completed!</string>
+    <string name="log_hw_decode">⏱️ [HW Accel] Decoding %s...</string>
+    <string name="log_video_frame_extract">⏱️ [Frame Extraction] Extracting cover using MediaMetadataRetriever...</string>
+    <string name="log_nio_merging">⏱️ [NIO Zero-Copy] Merging files...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 Starting service-level background merging job...\n</string>
+    <string name="notification_channel_name">Muxer Service</string>
+    <string name="notification_channel_desc">Merging Motion Photos in background...</string>
+    <string name="notification_title_processing">Merging Live Photos... (%d%%)</string>
+    <string name="notification_text_progress">Success: %1$d | Fail: %2$d | Left: ~%3$s</string>
+    <string name="unit_seconds">%d sec</string>
+    <string name="calculating">Calculating...</string>
+    <string name="notification_title_complete">Muxing Task Completed!</string>
+    <string name="notification_text_complete">Success: %1$d sets | Failed: %2$d sets</string>
+</resources>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">實況相片合成器</string>
+    <string name="start_muxing">開始合併</string>
+    <string name="btn_muxing">正在合併...</string>
+    <string name="step_one">第一步：選擇路徑</string>
+    <string name="select_input">選擇輸入檔案</string>
+    <string name="select_output">選擇輸出檔案夾</string>
+    <string name="config_options">高級合成選項</string>
+    <string name="error_select_path">錯誤：請先選擇輸入檔案同輸出檔案夾！</string>
+    <string name="selected_files_count">已選擇 %d 個檔案</string>
+    <string name="btn_add_files">添加檔案</string>
+    <string name="btn_add_folder">添加檔案夾</string>
+    <string name="btn_clear_list">清空全部</string>
+    <string name="btn_remove">移除</string>
+    <string name="step_two">第二步：輸出路徑</string>
+    <string name="empty_file_list">未選擇任何檔案</string>
+    <string name="setting_move_unmatched">郁走唔匹配嘅檔案</string>
+    <string name="setting_force_convert">單片直接轉實況照片</string>
+    <string name="setting_delete_temp">合併後刪除轉換後嘅 HEIC</string>
+    <string name="setting_delete_original">合併成功後刪除原始檔案</string>
+    <string name="title_process_progress">處理進度</string>
+    <string name="status_success">成功: %d</string>
+    <string name="status_fail">失敗: %d</string>
+    <string name="log_ready">> 終端準備就緒...\n</string>
+    <string name="dialog_about_title">關於 App</string>
+    <string name="dialog_privacy_title">隱私政策</string>
+    <string name="dialog_permissions_title">權限說明</string>
+    <string name="developer_info">開發者: 沓水雫 (Kutsumi Shizuku)</string>
+    <string name="project_usage">用法: 將相片同影片合併為可以喺相簿播到效果嘅實況照片 (Motion Photo)。</string>
+    <string name="app_version">版本: v1.1.0 (摺機優化版)</string>
+    <string name="privacy_content">本應用完全離線運行，所有相片處理都喺手機本地完成。應用程式完全冇加入任何網絡功能，絕對唔會收集或上載你嘅私人數據。</string>
+    <string name="perm_folder_access">● 資料夾訪問權限: 淨係處理你手動揀中嘅目錄。</string>
+    <string name="perm_bg_service">● 後台服務同通知: 提示進度並防止被系統清理。</string>
+    <string name="perm_vibrate">● 手機震動: 每日任務完工後嘅貼心反饋。</string>
+    <string name="btn_confirm">確定</string>
+    <string name="dialog_orphan_title">發現孤立影片 (共 %d 個)</string>
+    <string name="dialog_orphan_text">檢測到有影片檔案冇匹配嘅相片。係咪要將呢啲影片直接轉換為實況照片（提取第一秒做封面）？</string>
+    <string name="dialog_remember_choice">以後唔再提示，預設執行呢個選擇</string>
+    <string name="btn_convert_all">全部轉換</string>
+    <string name="btn_only_pairs">淨係處理配對項</string>
+    <string name="about_app">關於</string>
+
+    <!-- Logs -->
+    <string name="log_scanned_groups">掃描到 %d 組潛在檔案...</string>
+    <string name="log_match_success">🔗 匹配成功: %1$s + %2$s</string>
+    <string name="log_mux_success">✅ 合併成功: %s.jpg</string>
+    <string name="log_deleted_original">🗑️ 已刪除原始檔案: %1$s, %2$s</string>
+    <string name="log_extracting_cover">🎬 正在從影片提取封面: %s</string>
+    <string name="log_single_video_success">✅ 單影片直轉成功: %s.jpg</string>
+    <string name="log_deleted_original_single">🗑️ 已刪除原始檔案: %s</string>
+    <string name="log_no_match_video">⚠️ 未發現匹配影片: %s</string>
+    <string name="log_no_match_image">⚠️ 未發現匹配相片且未開啟單影片轉換: %s</string>
+    <string name="log_process_failed">❌ 處理失敗 %1$s: %2$s</string>
+    <string name="log_all_done">🎉 所有任務處理完畢！</string>
+    <string name="log_hw_decode">⏱️ [硬件加速] 解碼 %s...</string>
+    <string name="log_video_frame_extract">⏱️ [影片抽幀] 使用 MediaMetadataRetriever 提取封面...</string>
+    <string name="log_nio_merging">⏱️ [NIO 零拷貝] 合併檔案中...</string>
+
+    <!-- Service -->
+    <string name="log_service_start">🚀 開始後台合成任務...\n</string>
+    <string name="notification_channel_name">相片合成服務</string>
+    <string name="notification_channel_desc">正在後台合併動態相片...</string>
+    <string name="notification_title_processing">正在合成實況照片... (%d%%)</string>
+    <string name="notification_text_progress">成功機位: %1$d | 失敗: %2$d | 剩餘: 約 %3$s</string>
+    <string name="unit_seconds">%d秒</string>
+    <string name="calculating">計算中...</string>
+    <string name="notification_title_complete">合成任務順利完成！</string>
+    <string name="notification_text_complete">成功融合: %1$d 組 | 失敗: %2$d 組</string>
+</resources>
